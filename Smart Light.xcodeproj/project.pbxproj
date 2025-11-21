@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E847AF1C2ECF54B7005935D1 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E847AF1B2ECF54B7005935D1 /* FirebaseCore */; };
+		E847AF1E2ECF5514005935D1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E847AF1D2ECF5514005935D1 /* FirebaseDatabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E847AEF02ECF331C005935D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E847AF1E2ECF5514005935D1 /* FirebaseDatabase in Frameworks */,
+				E847AF1C2ECF54B7005935D1 /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				E847AEE42ECF331B005935D1 /* Smart Light */,
 				E847AEF22ECF331C005935D1 /* Smart LightTests */,
 				E847AEFC2ECF331C005935D1 /* Smart LightUITests */,
+				E847AF1A2ECF54B7005935D1 /* Frameworks */,
 				E847AEE32ECF331B005935D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				E847AEF92ECF331C005935D1 /* Smart LightUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E847AF1A2ECF54B7005935D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,8 @@
 			);
 			name = "Smart Light";
 			packageProductDependencies = (
+				E847AF1B2ECF54B7005935D1 /* FirebaseCore */,
+				E847AF1D2ECF5514005935D1 /* FirebaseDatabase */,
 			);
 			productName = "Smart Light";
 			productReference = E847AEE22ECF331B005935D1 /* Smart Light.app */;
@@ -195,6 +212,9 @@
 			);
 			mainGroup = E847AED92ECF331B005935D1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E847AF192ECF4ED6005935D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E847AEE32ECF331B005935D1 /* Products */;
 			projectDirPath = "";
@@ -550,6 +570,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E847AF192ECF4ED6005935D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E847AF1B2ECF54B7005935D1 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847AF192ECF4ED6005935D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E847AF1D2ECF5514005935D1 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847AF192ECF4ED6005935D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E847AEDA2ECF331B005935D1 /* Project object */;
 }

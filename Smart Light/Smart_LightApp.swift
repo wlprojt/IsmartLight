@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Smart_LightApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                viewModel: SmartLightViewModel(deviceId: "Smart Light")
+            )
         }
     }
 }
