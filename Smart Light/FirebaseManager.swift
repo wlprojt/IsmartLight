@@ -16,7 +16,7 @@ final class FirebaseManager {
 
         if database == nil {
             database = Database.database(
-                url: "https://ismartlight-88e2a-default-rtdb.asia-southeast1.firebasedatabase.app"
+                url: "*********"
             ).reference()
         }
     }
